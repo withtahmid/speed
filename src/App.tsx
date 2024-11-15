@@ -50,11 +50,10 @@ function App() {
   }, [])
 
   return (
-    <div className='flex w-full h-screen items-center justify-center'>
+    <div className='flex flex-col w-full h-screen items-center justify-center'>
       
-      { speed ? <h1>{speed.toFixed(2)}</h1> :
-                <p>{error}</p>
-      } 
+      <h1>{speed ? speed.toFixed(2) : error}</h1>
+      <p>loaded</p>
   </div>
   );
 }
